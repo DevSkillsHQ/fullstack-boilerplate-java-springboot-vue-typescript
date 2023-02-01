@@ -4,8 +4,8 @@ A backbone for your coding challenge.
 
 ## Contents
 
-- [Backend service](app-backend) - a Rails service with a `/ping` endpoint. Extend with your code.
-- [Frontend app](app-frontend) - a Vue 3/Vite app. Extend with your code.
+- [Backend service](app-backend) - a Java/Spring Boot service with a `/ping` endpoint. Extend with your code.
+- [Frontend app](app-frontend) - a Vue 3/TS/Vite app. Extend with your code.
 - [E2E test suites](cypress/integration) - a backend and a frontend Cypress test suites. Extend with your tests.
 - [Pipeline](.github/workflows/tests.yml) - a test Runner that executes the Cypress tests on push to a branch other than `master`/`main`.
 
@@ -13,17 +13,15 @@ A backbone for your coding challenge.
 
 ### Backend
 
-- Ruby 3.1.2 
-- Rails 7.0.3.1 
-
-#### Additional libs
-
-- sqlite3 (SQLite connection)
-- rack-cors (CORS support)
+- Java 17
+- Spring Boot 2
+- SQLite 3
+- Gradle 7
   
 ### Frontend
 
 - Vue 3
+- Typescript
 - Vite
 
 ### Misc
@@ -33,12 +31,7 @@ A backbone for your coding challenge.
 
 ## Getting started
 
-1. Make sure the required version of Ruby (2.7.0) is configured on your local env.
-
-```bash
-curl -sSL https://get.rvm.io | bash
-rvm install 2.7.0
-```
+1. Make sure the required version of Java (17) is configured on your local env.
 
 2. Make sure npm & node are configured on your local env. You can download those distributions for your platform [here](https://nodejs.org/en/download/)
 
@@ -46,8 +39,8 @@ rvm install 2.7.0
 
 ```bash
 npm install
-npm run build # both Rails backend and Vue frontend
-npm run build:backend # only Rails backend
+npm run build # both Java/Spring Boot backend and Vue frontend
+npm run build:backend # only Java/Spring Boot backend
 npm run build:frontend # only Vue frontend
 ```
 
@@ -55,8 +48,8 @@ npm run build:frontend # only Vue frontend
 
 ```bash
 npm install
-npm run start # both Rails backend and Vue frontend
-npm run start:backend # only Rails backend
+npm run start # both Java/Spring Boot backend and Vue frontend
+npm run start:backend # only Java/Spring Boot backend
 npm run start:frontend # only Vue frontend
 ```
 
