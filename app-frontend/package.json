@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "start": "vite preview --port 5000"
+    "start": "vite preview --host 0.0.0.0 --port 5000"
   },
   "dependencies": {
     "vue": "^3.2.45"
