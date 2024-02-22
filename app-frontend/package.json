@@ -9,7 +9,7 @@
     "start": "vite preview --host 0.0.0.0 --port 5000"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "vue": "^3.4.19"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.6.2",
